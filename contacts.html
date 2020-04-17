@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!DOCTYPE html>
+<html lang="it">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Giovanni Ciandrini - Web Developer/Engineer </title>
+    <title>Giovanni Ciandrini - Book's Corner </title>
     <link rel="stylesheet" href="./stylesheets/style.css" charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -11,24 +14,29 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
+<body>
 
 
-<div class="container justify-content-center mt-3">
-    <ul class="nav">
-     
+<div class="container mt-3">
+    <ul class="nav justify-content-center">
     <li class="nav-item">
     <a class="nav-link active" href="./index.html">Home</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link active" href="./bio.html">Bio</a>
+    <a class="nav-link active" href="./bio.html">About Me</a>
     </li>
      <li class="nav-item">
     <a class="nav-link active" href="./contacts.html">Contacts</a>
     </li>
-
-    <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">WorkInProgress</a>
-    </li>
     </ul>
 </div>
+
+
+<div class="container justify-content-center">
+<input type="text" id="inputUser"></input>
+<button id="buttonPrint" class="btn btn-primary active m-5">Give Your Feedback</button>
+<input readonly="readonly" type="text" id="outputUser"></input>
+
+</div>
+
 </body>
