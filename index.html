@@ -34,28 +34,48 @@
   <div class="row">
 
     <div class="col-lg-6 text-center mt-6">
-      <p class="text-center mt-6">PILLOLA ROSSA</p>
-      <p>Complimenti, lascia i dati qua sotto:</p>
+      <p class="text-center mt-6 red">PILLOLA ROSSA</p>
+      <p>COMPLIMENTI!!</p>
+      <p>Hai deciso che è arrivato il momento di muoverti e fare qualcosa per te stesso e per le persone a te care.
+Compilando il form qui sotto riceverai tutte le informazioni per partecipare alla live in cui spiegheremo il progetto che rivoluzionerà la tua vita.
+Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché proprio questo è il momento giusto per dare la svolta che hai sempre desiderato</p>
       
       <form>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="First name" required>
+          <input id="Nome" type="text" class="form-control" placeholder="Nome" required>
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" required>
-        </div>
-      </div>
-
-      <div class="row mt-2">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Mail" required>
+          <input id="Citta" type="text" class="form-control" placeholder="Città" required>
         </div>
       </div>
 
       <div class="row mt-2">
         <div class="col">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <input id="Mail" type="text" class="form-control" placeholder="Mail" required>
+        </div>
+      </div>
+
+
+      <div class="row mt-2">
+        <div class="col">
+          <input id="Telefono" type="text" class="form-control" placeholder="Telefono(opzionale)">
+        </div>
+      </div>
+
+   
+      <div class="row mt-2">
+          <div class="col">
+            <input type="checkbox" id="checkPrivacy" name="checkPrivacy" required> 
+            <label style="font-size:9px" for="checkPrivacy"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
+                per l'invio di una mail informativa e commerciale</label><br>
+            </div>
+          </div>  
+      
+
+      <div class="row mt-2">
+        <div class="col">
+          <button type="submit" id="buttonPrint" class="btn btn-primary">Procedi</button>
         </div>
       </div>
      </form>
@@ -64,8 +84,10 @@
   
 
     <div class="col-lg-6 text-center mt-6">
-        <p>PILLOLA BLU</p>
-        <p>Sei fortunato: alla prossima</p>
+        <p class="text-center mt-6 blue">PILLOLA BLU</p>
+        <p>SEI FORTUNATO!!!</p>
+        <p>Appartieni al 1% delle persone che sono già soddisfatte della propria vita, sii grato per tutto ciò che hai.
+        </p>
     </div>
 
   </div>

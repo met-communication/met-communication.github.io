@@ -1,9 +1,15 @@
 body
 {
     padding: 1em;
-    
 }
 
+.blue{
+    color: #1E2ED9;
+}
+
+.red{
+    color: #D9251E;
+}
 
 .frame-container {
     position: relative;
