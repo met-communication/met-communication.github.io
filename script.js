@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-
+   
 $("#buttonPrint").click(function(){
     
     var Nome = $("#Nome").val();
@@ -12,8 +12,16 @@ $("#buttonPrint").click(function(){
     if(Nome === "" || Citta === "" || Mail === "" || CheckPrivacy === false){
         //doNothing: input are not ok
     }
-    else{
+    else
+    {
+        //fuck This Shiiiiiiiiiiiiiiiiit
+        event.preventDefault();
+
         console.log("redirect to new page");
+        debugger;
+        window.location.replace("contacts.html");
+        debugger;
+       
     }
 
 });

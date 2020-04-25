@@ -1,6 +1,7 @@
 body
 {
-    padding: 1em;
+
+    background: lightblue;
 }
 
 .blue{
@@ -9,6 +10,12 @@ body
 
 .red{
     color: #D9251E;
+}
+
+.centerHeader{
+    margin-top:7px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .frame-container {
