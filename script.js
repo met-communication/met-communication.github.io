@@ -20,9 +20,9 @@ $("#buttonPrint").click(function(){
         ajaxCalls();
 
         console.log("redirect to new page");
-        debugger;
+ 
         window.location.replace("contacts.html");
-        debugger;
+     
        
     }
 
@@ -40,6 +40,7 @@ function ajaxCalls(){
             Citta : $("#Citta").val()
         },
         success: function(data) {
+        
             console.log('form submitted.' + data);
         },
         error: function(data){
