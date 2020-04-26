@@ -18,19 +18,27 @@ $("#buttonPrint").click(function(){
         //fuck This Shiiiiiiiiiiiiiiiiit
         event.preventDefault();
         ajaxCalls();
-
+       
         console.log("redirect to new page");
- 
-        window.location.replace("contacts.html");
-     
+
+        goToNextPage();
+
        
     }
 
 });
 
+function goToNextPage(){
+    setTimeout(function(){
+        window.location.replace("contacts.html");
+    }, 1000);
+}
+
+
 function ajaxCalls(){
     $.ajax({
         url: 'https://fathomless-headland-00945.herokuapp.com/sendMail',
+       
         type: 'GET',
         dataType:'json',
         data: {
@@ -43,9 +51,11 @@ function ajaxCalls(){
         
             console.log('form submitted.' + data);
         },
+       
         error: function(data){
             console.log(data);
-        }
+        },
+    
       });
 }
 
