@@ -15,13 +15,23 @@ $("#buttonPrint").click(function(){
     }
     else
     {
-        //fuck This Shiiiiiiiiiiiiiiiiit
+       
         event.preventDefault();
         ajaxCalls();
         goToNextPage();
     }
 
 });
+
+
+
+
+
+
+
+
+
+
 
 function goToNextPage(){
     setTimeout(function(){
