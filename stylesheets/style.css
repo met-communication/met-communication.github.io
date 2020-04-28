@@ -43,3 +43,8 @@ body
     background-color: #ffdddd;
   }
   
+
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}

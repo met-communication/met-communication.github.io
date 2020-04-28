@@ -18,12 +18,7 @@ $("#buttonPrint").click(function(){
         //fuck This Shiiiiiiiiiiiiiiiiit
         event.preventDefault();
         ajaxCalls();
-       
-        console.log("redirect to new page");
-
         goToNextPage();
-
-       
     }
 
 });
