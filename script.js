@@ -23,10 +23,6 @@ $("#buttonPrint").click(function(){
 });
 
 
-
-
-
-
 $("#buttonPrintBlu").click(function(){
     
     var Nome = $("#NomeBlu").val();
@@ -50,15 +46,12 @@ $("#buttonPrintBlu").click(function(){
 });
 
 
-
 $('a.nav-link').on('shown.bs.tab', function(e) {
     var href = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(href).offset().top
     }, 'slow');
   });
-
-
 
 
 
