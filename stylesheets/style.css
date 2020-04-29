@@ -44,7 +44,11 @@ body
   }
   
 
+  .nav-tabs > li.active  {
+    background-color: red;
+  }
 
-.nav-tabs, .nav-pills {
-    text-align:center;
+  .navbar .nav > .active > a {
+    background:none;
 }
+

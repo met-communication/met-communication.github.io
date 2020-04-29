@@ -32,11 +32,11 @@
 </div>
 
 
-<div class="mx-auto">
+<div class="mt-4 container">
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item"><a class="nav-link" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Pillola Rossa</a></li>
-  <li class="nav-item"><a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Pillola blu</a></li>
+  <li class="nav-item mx-auto mt-4" style="width: 50px"><a class="nav-link red" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" style="font-size:20px; font-weight:bold">Pillola Rossa</a></li>
+  <li class="nav-item mx-auto mt-4" style="width: 50px"><a class="nav-link blue" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" style="font-size:20px; font-weight:bold">Pillola blu</a></li>
 </ul>
 
 
@@ -49,7 +49,7 @@
 Compilando il form qui sotto riceverai tutte le informazioni per partecipare alla live in cui spiegheremo il progetto che rivoluzionerà la tua vita.
 Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché proprio questo è il momento giusto per dare la svolta che hai sempre desiderato</p>
   
- <form>
+ <form id="pillolarossaform">
       <div class="row">
         <div class="col">
           <input id="Nome" type="text" class="form-control" placeholder="Nome" required>
@@ -104,34 +104,34 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
         <p>Appartieni al 1% delle persone che sono già soddisfatte della propria vita, sii grato per tutto ciò che hai.
         </p>
 
- <form>
+ <form id="pillolabluform">
       <div class="row">
         <div class="col">
-          <input id="Nome" type="text" class="form-control" placeholder="Nome" required>
+          <input id="NomeBlu" type="text" class="form-control" placeholder="Nome" required>
         </div>
         <div class="col">
-          <input id="Citta" type="text" class="form-control" placeholder="Città" required>
+          <input id="CittaBlu" type="text" class="form-control" placeholder="Città" required>
         </div>
       </div>
 
       <div class="row mt-2">
         <div class="col">
-          <input id="Mail" type="text" class="form-control" placeholder="Mail" required>
+          <input id="MailBlu" type="text" class="form-control" placeholder="Mail" required>
         </div>
       </div>
 
 
       <div class="row mt-2">
         <div class="col">
-          <input id="Telefono" type="text" class="form-control" placeholder="Telefono(opzionale)">
+          <input id="TelefonoBlu" type="text" class="form-control" placeholder="Telefono(opzionale)">
         </div>
       </div>
 
    
       <div class="row mt-2">
           <div class="col">
-            <input type="checkbox" id="checkPrivacy" name="checkPrivacy" required> 
-            <label style="font-size:9px" for="checkPrivacy"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
+            <input type="checkbox" id="checkPrivacyBlu" name="checkPrivacyBlu" required> 
+            <label style="font-size:9px" for="checkPrivacyBlu"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
                 per l'invio di una mail informativa e commerciale</label><br>
             </div>
           </div>  
@@ -139,7 +139,7 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
 
       <div class="row mt-2">
         <div class="col">
-          <button id="buttonPrint" class="btn btn-primary">Procedi</button>
+          <button id="buttonPrintBlu" class="btn btn-primary">Procedi</button>
         </div>
       </div>
      </form>

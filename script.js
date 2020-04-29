@@ -15,9 +15,8 @@ $("#buttonPrint").click(function(){
     }
     else
     {
-       
         event.preventDefault();
-        ajaxCalls();
+        ajaxCalls(Nome,Citta,Mail,Telefono);
         goToNextPage();
     }
 
@@ -28,6 +27,36 @@ $("#buttonPrint").click(function(){
 
 
 
+$("#buttonPrintBlu").click(function(){
+    
+    var Nome = $("#NomeBlu").val();
+    var Citta = $("#CittaBlu").val();
+    var Mail = $("#MailBlu").val();
+    var CheckPrivacy = $("#checkPrivacyBlu").is(":checked");
+    var Telefono= $("#TelefonoBlu").val();
+
+    //dummy validation
+    if(Nome === "" || Citta === "" || Mail === "" || CheckPrivacy === false){
+        //doNothing: input are not ok
+    }
+    else
+    {
+       
+        event.preventDefault();
+        ajaxCalls(Nome,Citta,Mail,Telefono);
+        goToNextPage();
+    }
+
+});
+
+
+
+$('a.nav-link').on('shown.bs.tab', function(e) {
+    var href = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, 'slow');
+  });
 
 
 
@@ -40,17 +69,16 @@ function goToNextPage(){
 }
 
 
-function ajaxCalls(){
+function ajaxCalls(nome,citta,mail,telefono){
     $.ajax({
         url: 'https://fathomless-headland-00945.herokuapp.com/sendMail',
-       
         type: 'GET',
         dataType:'json',
         data: {
-            Nome: $("#Nome").val(),
-            Mail: $("#Mail").val(),
-            Telefono: $("#Telefono").val(),
-            Citta : $("#Citta").val()
+            Nome: nome,
+            Mail: mail,
+            Telefono: telefono,
+            Citta : citta
         },
         success: function(data) {
         
