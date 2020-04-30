@@ -14,12 +14,13 @@
 
 <body style="background:aliceblue">
 
+<div class="bg">
 
 <div class="container mt-2">
   <div class="row text-center">
     <div class="col">
-    <p class="text-center mt-2 display-1">Ben arrivato, Neo...</p>
-     <p class="text-center mt-2" style="font-size:20px">Senti il bisogno di conoscere la verità: che cosa aspetti? Guarda il video, e fai la tua scelta.</p>
+    <p class="text-center mt-2 display-1 futura">Ben arrivato, Neo...</p>
+     <p class="text-center mt-2 futura" style="font-size:20px">Senti il bisogno di conoscere la verità: che cosa aspetti? Guarda il video, e fai la tua scelta.</p>
     </div>
   </div>
 
@@ -33,19 +34,19 @@
 
 
 <div class="mt-4 container">
-<p class="text-center mt-4 display-4" style="font-size:20px; font-weight:bold">Quindi: che cosa scegli?</p>
+<p class="text-center mt-4 display-4 futura" style="font-size:20px; font-weight:bold">Quindi: che cosa scegli?</p>
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-  <li class="nav-item mx-auto mt-2" style="width: 50px"><a class="nav-link red" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" style="font-size:20px; font-weight:bold">Pillola Rossa</a></li>
-  <li class="nav-item mx-auto mt-2" style="width: 50px"><a class="nav-link blue" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" style="font-size:20px; font-weight:bold">Pillola blu</a></li>
+  <li class="nav-item mx-auto mt-2" style="width: 50px"><a class="nav-link red futura" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" style="font-size:20px; font-weight:bold">Pillola Rossa</a></li>
+  <li class="nav-item mx-auto mt-2" style="width: 50px"><a class="nav-link blue futura" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" style="font-size:20px; font-weight:bold">Pillola blu</a></li>
 </ul>
 
 
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane p-4 fade show" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
   
-  <p class="text-center mt-6 red">Hai scelto: Pillola Rossa</p>
-      <p>COMPLIMENTI!!</p>
-      <p>Hai deciso che è arrivato il momento di muoverti e fare qualcosa per te stesso e per le persone a te care.<br /><br />
+  <p class="text-center mt-6 red futura">Hai scelto: Pillola Rossa</p>
+      <p class="futura">COMPLIMENTI!!</p>
+      <p class="futura">Hai deciso che è arrivato il momento di muoverti e fare qualcosa per te stesso e per le persone a te care.<br /><br />
  Compilando il <b>form</b> qui sotto riceverai tutte le informazioni per partecipare alla live in cui spiegheremo il progetto che rivoluzionerà la tua vita. <br /><br />
 Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché proprio questo è il momento giusto per dare la svolta che hai sempre desiderato
 </p>
@@ -53,23 +54,26 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
  <form id="pillolarossaform">
       <div class="row">
         <div class="col">
-          <input id="Nome" type="text" class="form-control" placeholder="Nome" required>
+          <input id="Nome" type="text" class="form-control fsize-25" placeholder="Nome" required style="font-size:20px">
         </div>
+      </div>
+
+      <div class="row mt-2">  
         <div class="col">
-          <input id="Citta" type="text" class="form-control" placeholder="Città" required>
+          <input id="Citta" type="text" class="form-control" placeholder="Città" required style="font-size:20px">
         </div>
       </div>
 
       <div class="row mt-2">
         <div class="col">
-          <input id="Mail" type="text" class="form-control" placeholder="Mail" required>
+          <input id="Mail" type="text" class="form-control" placeholder="Mail" required style="font-size:20px">
         </div>
       </div>
 
 
       <div class="row mt-2">
         <div class="col">
-          <input id="Telefono" type="text" class="form-control" placeholder="Telefono(opzionale)">
+          <input id="Telefono" type="text" class="form-control" placeholder="Telefono(opzionale)" style="font-size:20px">
         </div>
       </div>
 
@@ -77,7 +81,7 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
       <div class="row mt-2">
           <div class="col">
             <input type="checkbox" id="checkPrivacy" name="checkPrivacy" required> 
-            <label style="font-size:9px" for="checkPrivacy"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
+            <label style="font-size:12px" for="checkPrivacy"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
                 per l'invio di una mail informativa e commerciale</label><br>
             </div>
           </div>  
@@ -100,9 +104,9 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
   </div>
   <div class="tab-pane p-4 fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
   
-  <p class="text-center mt-6 blue">Hai scelto: Pillola Blu</p>
-        <p>SEI FORTUNATO!!!</p>
-        <p>Appartieni al 1% delle persone che sono già soddisfatte della propria vita, sii grato per tutto ciò che hai.<br/><br/>
+  <p class="text-center mt-6 blue futura">Hai scelto: Pillola Blu</p>
+        <p class="futura">SEI FORTUNATO!!!</p>
+        <p class="futura">Appartieni al 1% delle persone che sono già soddisfatte della propria vita, sii grato per tutto ciò che hai.<br/><br/>
         Ma noi ti vogliamo bene: e se domani ti svegli e ti rendi conto che vuoi altro? <br/><br/>
         Compilando il <b>form</b> qui sotto riceverai tutte le informazioni per partecipare alla live in cui spiegheremo il progetto che rivoluzionerà la tua vita. 
         </p>
@@ -110,23 +114,27 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
  <form id="pillolabluform">
       <div class="row">
         <div class="col">
-          <input id="NomeBlu" type="text" class="form-control" placeholder="Nome" required>
+          <input id="NomeBlu" type="text" class="form-control" placeholder="Nome" required style="font-size:20px">
         </div>
+        </div>
+
+
+        <div class="row mt-2">
         <div class="col">
-          <input id="CittaBlu" type="text" class="form-control" placeholder="Città" required>
+          <input id="CittaBlu" type="text" class="form-control" placeholder="Città" required style="font-size:20px">
+        </div>
+        </div>
+     
+      <div class="row mt-2">
+        <div class="col">
+          <input id="MailBlu" type="text" class="form-control" placeholder="Mail" required style="font-size:20px">
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col">
-          <input id="MailBlu" type="text" class="form-control" placeholder="Mail" required>
-        </div>
-      </div>
-
 
       <div class="row mt-2">
         <div class="col">
-          <input id="TelefonoBlu" type="text" class="form-control" placeholder="Telefono(opzionale)">
+          <input id="TelefonoBlu" type="text" class="form-control" placeholder="Telefono(opzionale)" style="font-size:20px">
         </div>
       </div>
 
@@ -134,7 +142,7 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
       <div class="row mt-2">
           <div class="col">
             <input type="checkbox" id="checkPrivacyBlu" name="checkPrivacyBlu" required> 
-            <label style="font-size:9px" for="checkPrivacyBlu"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
+            <label style="font-size:12px" for="checkPrivacyBlu"> Dichiaro di essere maggiorenne (minimo 18 anni di età) e consento il trattamento di questi dati 
                 per l'invio di una mail informativa e commerciale</label><br>
             </div>
           </div>  
@@ -154,7 +162,7 @@ Sarai guidato in un percorso dettagliato ed efficace, ti spiegherò perché prop
 </div>
 
 </div>
-
+</div>
 </body>
 
 

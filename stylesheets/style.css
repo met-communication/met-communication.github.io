@@ -12,6 +12,16 @@ body
     color: #D9251E;
 }
 
+.futura {
+    font-family: futura;
+}
+
+.fsize-25 {
+    font-size: 25px;
+}
+
+
+
 .centerHeader{
     margin-top:7px;
     font-weight: bold;
@@ -44,3 +54,15 @@ body
   }
   
 
+  .bg {
+    /* The image used */
+    background-image: url("../media/framebck.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
