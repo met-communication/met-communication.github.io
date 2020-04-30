@@ -37,7 +37,6 @@ $("#buttonPrintBlu").click(function(){
     }
     else
     {
-       
         event.preventDefault();
         ajaxCalls(Nome,Citta,Mail,Telefono);
         goToNextPage();
