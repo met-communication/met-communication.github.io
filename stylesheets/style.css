@@ -55,7 +55,7 @@ body
 
   .bg {
     /* The image used */
-    background-image: url("../media/60.jpg");
+    background-image: url("../media/framebck.jpg");
   
     /* Full height */
     height: 100%;
@@ -66,7 +66,11 @@ body
     background-size: cover;
   }
 
+  .headerForIphone{
+        font-size: 4.5rem;
+  }
 
-  @media (max-width: 400px) {
-    body{font-size: 10px;}
+
+  @media (max-width: 350px) {
+    .headerForIphone{font-size: 4rem !important;}
 }
