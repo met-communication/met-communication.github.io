@@ -43,26 +43,11 @@ body
     height: 100%;
 }
 
-
-.rwd-video {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    position: relative;
-}
-.rwd-video iframe,
-.rwd-video object,
-.rwd-video embed {
-    height: 500px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 500px;
-    margin-left: auto;   /* Automatic margin from left */
-    margin-right: auto;
-}
-
+/*CSS*/ 
+.videoPersonal {
+    width: 70%;
+    max-height: 70%;
+  }
 
 .wrapper {
     overflow: hidden;
@@ -97,4 +82,12 @@ body
 
   @media (max-width: 350px) {
     .headerForIphone{font-size: 4rem !important;}
+}
+
+
+@media (max-width: 500px){
+    .videoPersonal{
+        width: 100% !important;
+        max-height: 100% !important;
+    }
 }
