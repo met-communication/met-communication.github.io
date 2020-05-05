@@ -21,14 +21,14 @@ $("#buttonPrint").click(function(){
     var mailValida = validaMail(Mail);
     if(mailValida)
     {
-        $("#Mail").removeClass("invalid");
+        $("#Mail").removeClass("is-invalid");
         event.preventDefault();
         ajaxCalls(Nome,Citta,Mail,Telefono);
         goToNextPage();
     }  
      else
     {
-        $("#Mail").addClass("invalid");
+        $("#Mail").addClass("is-invalid");
         return false;
     }
 }
@@ -51,26 +51,22 @@ $("#buttonPrintBlu").click(function(){
     else
     {
 
-  //validazioneMail
-  var mailValida = validaMail(Mail);
-  if(mailValida)
-  {
-      $("#MailBlu").removeClass("invalid");
-      event.preventDefault();
-      ajaxCalls(Nome,Citta,Mail,Telefono);
-      goToNextPage();
-  }  
-   else
-  {
-      $("#MailBlu").addClass("invalid");
-      return false;
-  }
+   //validazioneMail
+   var mailValida = validaMail(Mail);
+   if(mailValida)
+   {
+       $("#MailBlu").removeClass("is-invalid");
+       event.preventDefault();
+       ajaxCalls(Nome,Citta,Mail,Telefono);
+       goToNextPage();
+   }  
+    else
+   {
+       $("#MailBlu").addClass("is-invalid");
+       return false;
+   }
+}
 
-
-        event.preventDefault();
-        ajaxCalls(Nome,Citta,Mail,Telefono);
-        goToNextPage();
-    }
 
 });
 
