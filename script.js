@@ -80,13 +80,13 @@ $('a.nav-link').on('shown.bs.tab', function(e) {
 
 function validaMail(mail){
     debugger;
-    if(mail.indexOf('@' > -1)){
+    var regexp= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(regexp.test(mail)){
         return true;
-    }
-    else
-    {
+    } else{
         return false;
     }
+   
    
 }
 

@@ -54,7 +54,9 @@ body
     max-width: 100%;
  }
 
-
+.form-control.is-invalid {
+    background-color: #ffdddd !important;
+}
 
  input:invalid {
     background-color: #ffdddd !important;
