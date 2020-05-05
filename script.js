@@ -8,17 +8,30 @@ $("#buttonPrint").click(function(){
     var Mail = $("#Mail").val();
     var CheckPrivacy = $("#checkPrivacy").is(":checked");
     var Telefono= $("#Telefono").val();
-
+     
     //dummy validation
-    if(Nome === "" || Citta === "" || Mail === "" || CheckPrivacy === false){
-        //doNothing: input are not ok
+    if(Nome === "" || Citta === "" || CheckPrivacy === false)
+    {
+          
     }
     else
     {
+
+    //validazioneMail
+    var mailValida = validaMail(Mail);
+    if(mailValida)
+    {
+        $("#Mail").removeClass("invalid");
         event.preventDefault();
         ajaxCalls(Nome,Citta,Mail,Telefono);
         goToNextPage();
+    }  
+     else
+    {
+        $("#Mail").addClass("invalid");
+        return false;
     }
+}
 
 });
 
@@ -37,6 +50,23 @@ $("#buttonPrintBlu").click(function(){
     }
     else
     {
+
+  //validazioneMail
+  var mailValida = validaMail(Mail);
+  if(mailValida)
+  {
+      $("#MailBlu").removeClass("invalid");
+      event.preventDefault();
+      ajaxCalls(Nome,Citta,Mail,Telefono);
+      goToNextPage();
+  }  
+   else
+  {
+      $("#MailBlu").addClass("invalid");
+      return false;
+  }
+
+
         event.preventDefault();
         ajaxCalls(Nome,Citta,Mail,Telefono);
         goToNextPage();
@@ -52,7 +82,11 @@ $('a.nav-link').on('shown.bs.tab', function(e) {
     }, 'slow');
   });
 
-
+function validaMail(mail){
+    debugger;
+    var regExp= new RegExp("^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$");
+    return regExp.test(mail);
+}
 
 function goToNextPage(){
     setTimeout(function(){

@@ -52,6 +52,9 @@ body
     background-color: #ffdddd;
   }
   
+.invalid{
+    background-color: #ffdddd !important;
+}
 
   .bg {
     /* The image used */
