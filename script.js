@@ -80,8 +80,14 @@ $('a.nav-link').on('shown.bs.tab', function(e) {
 
 function validaMail(mail){
     debugger;
-    var regExp= new RegExp("^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$");
-    return regExp.test(mail);
+    if(mail.indexOf('@' > -1)){
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+   
 }
 
 function goToNextPage(){
